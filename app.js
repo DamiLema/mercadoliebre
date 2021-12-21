@@ -49,7 +49,7 @@ app.get('/registro', (req, res) => {
    app.get('/ingresar', (req, res) => {
     res.sendFile(path.join(__dirname, './views/login.html'));
    });
-app.listen(8888, () => {
+app.listen(process.env.PORT || 8888, () => {
     console.log("Servidor OK");
 })
 
