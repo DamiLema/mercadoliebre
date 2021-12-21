@@ -39,7 +39,7 @@ app.use(express.static(publicFolderPath));
 
 app.use(express.static(path.join(__dirname, "./public")));
 
-app.get('/home', (req, res) => {
+app.get('/mercadoliebre', (req, res) => {
     res.sendFile(path.join(__dirname, './views/home.html'));
    });
 
